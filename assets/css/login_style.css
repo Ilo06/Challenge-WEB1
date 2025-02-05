@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url('../Font/Quicksand-VariableFont_wght.ttf');
+}
+:root{
+    font-family: "Quicksand", sans-serif;
+    --primary-color: #0D7CC6;
+    --secondary-color: #F68712 ;
+    --terty-color: #90C2E6;
+    --black: #010101;
+    --white: #F2F2F2;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    text-align: center;
+    p{
+        width: 40vw;
+    }
+}
+.input{
+    padding: 5px;
+    background-color: rgb(219, 219, 219);
+    margin-top: 10px;
+    border-radius: 3px;
+}
+input{
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 200px;
+    color: var(--black);
+    text-align: center;
+}
+.login-picture{
+    background-color: var(--primary-color);
+    width: 50vw;
+    height: 100vh;
+    flex: 1;
+}
+button{
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 5px 35px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 3px;
+    transition: all ease 0.2s;
+}
+button:active{
+    scale: 0.9;
+    filter: brightness(0.8);
+    transition: all ease 0.2s;
+}
+.hide{
+    display: none;
+}
