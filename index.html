@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JCRAM'V Login</title>
     <link rel="stylesheet" href="assets/css/login_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="assets/javascript/index_script.js" defer></script>
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
 </head>
 <body>
-    <div class="login-form">
+    <div class="login__form">
         <h1>Login</h1>
         <p>Enter your credential to access a world of travel opportunities, personalized intineraries, and exclusive deals. Let's explore the world together!</p>
-        <div class="input"><input type="text" name="mail" id="mail"></div>
-        <div class="input"><input type="password" name="mail" id="password"></div>
+        <div class="input"><i class='bx bxs-user-circle menu-icon'></i><input type="email" name="mail" id="mail" placeholder="test@gmail.com"></div>
+        <div class="input"><i class='bx bxs-lock-alt menu-icon'></i><input type="password" name="mail" id="password" placeholder="Password"></div>
         <button type="button" id="button">Login Now</button>
         <button type="button" id="button-loading" class="hide">...</button>
+        <div id="login__form__alert" class="hide"><i class='bx bxs-error'></i>Invalid Email or Password</div>
     </div>
-    <div class="login-picture">
-        
+    <div class="login__picture">
+        <div class="plane"></div>
+        <div class="login__image"></div>
     </div>
     
 </body>

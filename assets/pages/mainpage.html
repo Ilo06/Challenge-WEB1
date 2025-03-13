@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCRAM'V</title>
+    <link rel="stylesheet" href="../css/main_style.css">
+    <script src="../javascript/mainpage_script.js" defer></script>
+    <script src="../javascript/reservation_script.js" defer></script>
+    <script src="../javascript/about_script.js" defer></script>
+    <script src="../javascript/navbar_script.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <div class="logo__image"></div>
+            <h1>JCRAM'V</h1>
+        </div>
+        <div class="page-list">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="#hotel">Hotel</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </ul>
+        </div>
+        <i class='bx bx-menu open-close' id="menu"></i>
+        <a href="../../index.html"><button type="button" id="sign__out">Sign Out</button></a>
+    </nav>
+    <div class="responsive-navbar">
+        <i class='bx bxs-x-circle open-close' id="close"></i>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#destination">Destination</a></li>
+            <li><a href="#hotel">Hotel</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+        </ul>
+    </div>
+    <div class="home" id="home">
+        <div class="home__content">
+            <h1>Discover the <br>best destinations in <br>the world</h1>
+            <p>Welcome to JCRAM'V, your first destination for <br>discovering the most breathtaking places on Earth. <br>Whether you're seeking adventure or relaxation, we have <br>the perfect gateaway for you.</p>
+            <a href="#about"><button type="button">Get Started</button></a>
+        </div>
+        <div class="home__pictures">
+            <center>
+                <div class="home--girl"></div>
+                <div class="home--arrow"></div>
+                <div class="home--palm"></div>
+            </center>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="about__pictures">
+            <div class="about--palm"></div>
+            <div class="about--mountains about__pictures--column1"></div>
+            <div class="about--kayak"></div>
+            <div class="about--beach about__pictures--column1"></div>
+        </div>
+        <div class="about__content">
+            <h1>We recommend a Beautiful place <br>every month</h1>
+            <p>At JCRAM'V we strive to bring you the most stunning destination <br>every month. From tropical paradises to historical landmarks, our curated <br>selection are sure to inspire your next adventure.</p>
+            <a href="#reservation"><button type="button">Reservation</button></a>
+            <div class="about__content__stats">
+                <div class="about__content__stats--service">
+                    <h1 id="99count"></h1>
+                    <p>of satisfied custommers recommend <br>our services</p>
+                </div>
+                <div class="about__content__stats--countries">
+                    <h1 id="220count"></h1>
+                    <p>countries visited <br>annually</p>
+                </div>
+                <div class="about__content__stats--years">
+                    <h1 id="50count"></h1>
+                    <p>years of experience in the travel <br>industry</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="destination" id="destination">
+        <center>
+            <h1>Top Destination</h1>
+            <p>Explore our best destination</p>
+        </center>
+        <div class="cards">
+            <div class="card">
+                <div class="card__picture" id="poitiers"></div>
+                <div class="card__title">
+                    <div class="card__activity">
+                        <div class="card__place"><strong>Poitiers</strong></div>
+                        <div class="card__days">2 Days 3 Nights</div>
+                    </div>
+                    <div class="card__stars"><i class='bx bxs-star'></i>4.3</div>
+                </div>
+                <div class="card__icons">
+                    <div class="card--plane card__icons--child"><i class='bx bxs-plane-alt'></i>Plane</div>
+                    <div class="card--hotel card__icons--child"><i class='bx bxs-hotel' ></i>Hotel</div>
+                    <div class="card--transfert card__icons--child"><i class='bx bxs-car'></i>Transfert</div>
+                    <div class="card--activity card__icons--child"><i class='bx bxs-drink'></i>Activity</div>
+                </div>
+                <div class="card__price"><i class='bx bxs-bookmark'></i><strong>98.90$ /person</strong></div>
+            </div>
+            <div class="card">
+                <div class="card__picture" id="spain"></div>
+                <div class="card__title">
+                    <div class="card__activity">
+                        <div class="card__place"><strong>Spain</strong></div>
+                        <div class="card__days">6 Days 7 Nights</div>
+                    </div>
+                    <div class="card__stars"><i class='bx bxs-star'></i>4.7</div>
+                </div>
+                <div class="card__icons">
+                    <div class="card--plane card__icons--child"><i class='bx bxs-plane-alt'></i>Plane</div>
+                    <div class="card--hotel card__icons--child"><i class='bx bxs-hotel' ></i>Hotel</div>
+                    <div class="card--transfert card__icons--child"><i class='bx bxs-car'></i>Transfert</div>
+                    <div class="card--activity card__icons--child"><i class='bx bxs-drink'></i>Activity</div>
+                </div>
+                <div class="card__price"><i class='bx bxs-bookmark'></i><strong>98.90$ /person</strong></div>
+            </div>
+            <div class="card">
+                <div class="card__picture" id="kenya"></div>
+                <div class="card__title">
+                    <div class="card__activity">
+                        <div class="card__place"><strong>Kenya</strong></div>
+                        <div class="card__days">8 Days 9 Nights</div>
+                    </div>
+                    <div class="card__stars"><i class='bx bxs-star'></i>4.9</div>
+                </div>
+                <div class="card__icons">
+                    <div class="card--plane card__icons--child"><i class='bx bxs-plane-alt'></i>Plane</div>
+                    <div class="card--hotel card__icons--child"><i class='bx bxs-hotel' ></i>Hotel</div>
+                    <div class="card--transfert card__icons--child"><i class='bx bxs-car'></i>Transfert</div>
+                    <div class="card--activity card__icons--child"><i class='bx bxs-drink'></i>Activity</div>
+                </div>
+                <div class="card__price"><i class='bx bxs-bookmark'></i><strong>80$ /person</strong></div>
+            </div>
+            <div class="card">
+                <div class="card__picture" id="hallstatt"></div>
+                <div class="card__title">
+                    <div class="card__activity">
+                        <div class="card__place"><strong>Hallstatt</strong></div>
+                        <div class="card__days">3 Days 4 Nights</div>
+                    </div>
+                    <div class="card__stars"><i class='bx bxs-star'></i>4.9</div>
+                </div>
+                <div class="card__icons">
+                    <div class="card--plane card__icons--child"><i class='bx bxs-plane-alt'></i>Plane</div>
+                    <div class="card--hotel card__icons--child"><i class='bx bxs-hotel' ></i>Hotel</div>
+                    <div class="card--transfert card__icons--child"><i class='bx bxs-car'></i>Transfert</div>
+                    <div class="card--activity card__icons--child"><i class='bx bxs-drink'></i>Activity</div>
+                </div>
+                <div class="card__price"><i class='bx bxs-bookmark'></i><strong>108.90$ /person</strong></div>
+            </div>
+        </div>
+       
+    </div>
+    <center>
+        <div class="reservation" id="reservation">
+            <div class="reservation__content">
+                <h1>Life is short, <br>the world is wide</h1>
+                <p>The world is a book and those who do not travel reads only a page. Live every day like the last day of your life.</p>
+                <h2>Here Our reservation</h2>
+                <ul class="reservation__form">
+                    <li><strong>Location</strong><div class="reservation--location reservation--input"><i class='bx bxs-paper-plane'></i><input type="text" id="location" placeholder="Where are you going ?"></div></li>
+                    <li><strong>Check-in</strong><div class="reservation--check-in reservation--input"><i class='bx bxs-calendar-check'></i><input type="date" id="check-in"></div></li>
+                    <li class="reservation__form--row2"><strong>Check-out</strong><div class="reservation--check-out reservation--input"><i class='bx bxs-calendar-check'></i><input type="date" id="check-out"></div></li>
+                    <li class="reservation__form--row2"><strong>E-mail</strong><div class="reservation--email reservation--input"><i class='bx bxs-envelope'></i><input type="email" id="email" placeholder="example_mail@gmail.com"></div></li>
+                </ul>
+                <center>
+                    <button type="button" id="reservation-button">Make reservation ..... <i class='bx bxs-book'></i></button>
+                    <div class="reservation--success" id="responsive--success">Reservation success</div>
+                </center>
+            </div>
+            <div class="reservation__picture"><div class="reservation--success"><i class='bx bxs-ch
+                eck'></i>Reservation success</div></div>
+        </div>
+        <div class="hotel" id="hotel">
+            <h1>Our hotel</h1>
+            <p>You can see their one of our hotel destination</p>
+            <div class="hotel__pictures">
+                <div class="hotel__pictures__left">
+                    <div id="hotel-room1"></div>
+                    <div id="hotel-desk"></div>
+                </div>
+                <div class="hotel__pictures__center"></div>
+                <div class="hotel__pictures__right">
+                    <div id="hotel-room2"></div>
+                    <div id="hotel-kitchen"></div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <footer>
+        <div class="description">
+            <div class="logo">
+                <div class="logo__image"></div>
+                <h3>JCRAM'<span>V</span></h3>
+            </div>
+            <div class="description__text">
+                <p>Explore the world with JCRAM'V and <br> discover unforgetable experiences. From <br> the moment you arrive we are dedicated to <br>making you journey extraordinary</p>
+            </div>
+            <div class="description__social">
+                <i class='bx bxl-facebook-square description-icon'></i>
+                <i class='bx bxl-whatsapp-square description-icon'></i>
+                <i class='bx bxl-instagram-alt description-icon' ></i>
+                <i class='bx bxl-linkedin-square description-icon'  ></i>
+            </div>
+        </div>
+        <div class="contact">
+            <center>
+                <h3>Contact Us</h3>
+                <p>123 Rue Radama Soavimasoandro</p>
+                <p>hei.student@hei.school</p>
+                <p>+261-32-45-567-67</p>
+            </center>
+
+        </div>
+        <div class="sign-up">
+            <h3>Sign Up to new paper</h3>
+            <div class="sign-up__input">
+                <input class="input" type="text" id="sign-up--input">
+                <div class="sign-up--send"><strong>Send</strong></div>
+            </div>
+            <div id="sent" class="send-message sent-hide"><h4>Sent!</h4></div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>

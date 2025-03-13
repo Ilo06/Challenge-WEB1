@@ -1,0 +1,811 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url('../Font/Quicksand-VariableFont_wght.ttf');
+}
+:root{
+    font-family: "Quicksand", sans-serif;
+    --primary-color: #0D7CC6;
+    --secondary-color: #F68712 ;
+    --terty-color: #90C2E6;
+    --black: #010101;
+    --white: #F2F2F2;
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+button{
+    font-family: "Quicksand";
+}
+::marker{
+    display: none;
+    color: transparent;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+li{
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 30px;
+    background-color: white;
+    padding-inline: 20px;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+    font-weight: 600;
+    transition: all ease 0.3s;
+    z-index: 1000;
+}
+.navbar-scrolled{
+    margin: 0% ;
+    top:0 ;
+    transition: all ease 0.3s;
+    border-radius: 0%;
+    background-color: var(--terty-color);
+}
+
+
+
+
+
+.logo{
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.logo__image{
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    background-position: center;
+    width: 35px;
+    height: 60px;
+    border-radius: 10px;
+}
+button{
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 7px 25px;
+    border: none;
+    border-radius: 3px;
+    transition: all ease 0.2s;
+}
+button:active{
+    scale: 0.9;
+    filter: brightness(0.8);
+    transition: all ease 0.2s;
+}
+#sign__out{
+    color: var(--white);
+}
+.home{
+    /* margin: 10px; */
+    background-color: var(--white);
+    width: calc(100% -20px);
+    height: fit-content;
+    margin-inline: 10px;
+    border-radius: 20px;
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: calc(-18vh + 5px);
+}
+.home__content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    /* padding-right: 20vw; */
+    text-align: left;
+    
+    button{
+        width: fit-content;
+        margin-top: 20px;
+    }
+}
+.home__pictures{
+    flex: 1;
+    background-color: aliceblue;
+    margin: 0%;
+    border-radius: 0px 20px 20px 0px;
+}
+.home--girl{
+    background-image: url(../images/girlTravel.png);
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 30vw;
+    margin-top: 20vh;
+    background-color: var(--terty-color);
+    border-radius: 50% 50% 30px 50%;
+}
+.home--arrow{
+    background-image: url(../images/fleche-courbe.png);
+    background-size: cover;
+    background-position: center;
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: -30vw;
+    right: -11vw;
+}
+.home--palm{
+    background-image: url(../images/bannerBefor.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 10vw;
+    aspect-ratio: 3/2;
+    position: relative;
+    top: -17vw;
+    left: -10vw;    
+
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-block: 40px;
+    opacity: 0;
+    scale: 0.5;
+    transition: all ease 0.4s;
+
+}
+.about--palm{
+    background-image: url(../images/about1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 160px;
+    margin-left: 20px;
+    margin-top: 20px;
+    aspect-ratio: 1;
+    border-radius: 15px;
+}
+.about--mountains{
+    background-image: url(../images/about2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 180px;
+    aspect-ratio: 1;
+    border-radius: 15px;
+}
+.about--kayak{
+    background-image: url(../images/about3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 180px;
+    aspect-ratio: 1;
+    border-radius: 15px;
+}
+.about--beach{
+    background-image: url(../images/about4.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 160px;
+    aspect-ratio: 1;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.about__pictures{
+    display: grid;
+    flex: 1;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.about__content{
+    flex: 1;
+}
+.about__pictures--column1{
+    grid-column: 2;
+}
+
+.about__content__stats{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap:5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+#poitiers{
+    background-image: url(../images/topdestination1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+#spain{
+    background-image: url(../images/topdestination2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+#kenya{
+    background-image: url(../images/topdestination3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+#hallstatt{
+    background-image: url(../images/topdestination4.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card{
+    box-shadow: 0px 0px 4px var(--terty-color);
+    border-radius: 17px;
+    padding: 7px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    
+}
+.card__icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.card__price{
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding-block: 10px;
+}
+.destination{
+    margin-block: 40px;
+    opacity: 0;
+    scale: 0.5;
+    transition: all ease 0.4s;
+}
+.scrolled{
+    opacity: 1 !important;
+    scale: 1 !important;
+    transition: all ease 0.4s;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.reservation--input{
+    padding: 5px;
+    margin-top: 5px;
+    background-color: var(--white);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+input{
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 200px;
+    color: var(--black);
+    background-color: var(--white);
+    text-align: center;
+    text-align: left;
+    width: 100%;
+    font-family: "Quicksand";
+}
+.reservation{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-radius: 35px;
+    gap: 15px;
+    margin-block: 40px;
+    background-color: var(--terty-color);
+    opacity: 0;
+    scale: 0.5;
+    transition: all ease 0.4s;
+}
+.reservation__picture{
+    background-image: url(../images/reservation.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 70vh;
+    border-radius: 20px;
+    flex: 1;
+}
+.reservation__content{
+    flex: 1;
+    text-align: left;
+    /* gap: 10px; */
+    margin-inline: auto;
+
+    ul{
+        display: grid;
+        padding: 0%;
+    }
+}
+#reservation-button{
+    background-color: var(--secondary-color);
+    margin-top: 5px;
+    width: 80%;
+}
+.reservation__form--row2{
+    grid-row: 2;
+}
+
+.hotel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block: 40px;
+    opacity: 0;
+    scale: 0.5;
+    transition: all ease 0.4s;
+
+    h1{
+        margin: 0%;
+    }
+}
+.hotel__pictures{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.hotel__pictures__left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hotel__pictures__right{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hotel__pictures__center{
+    background-image: url(../images/hotel5.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 415px;
+    border-radius: 15px;
+}
+#hotel-room1{
+    background-image: url(../images/hotel1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+}
+#hotel-desk{
+    background-image: url(../images/hotel2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+}
+#hotel-room2{
+    background-image: url(../images/hotel3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+}
+#hotel-kitchen{
+    background-image: url(../images/hotel4.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.reservation--success{
+    position: absolute;
+    background-color: #51A852;
+    bottom: 25px;
+    right: 20px;
+    border-radius: 15px;
+    width: fit-content;
+    padding-inline: 20px;
+    padding-block: 10px;
+    font-weight: 700;
+    color: var(--white);
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.success{
+    opacity: 1;
+    transition: all ease 0.4s;
+}
+
+footer{
+    background-color: var(--black);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white);
+    padding-top: 20px;
+    span{
+        color: var(--secondary-color);
+    }
+    h3{
+        color: var(--white);
+    }
+}
+.description{
+    color: var(--white);
+    justify-content: left;
+    .logo{
+        justify-self: left;
+    }
+}
+.sign-up__input{
+    display: flex;
+    flex-direction: row;
+}
+#sign-up--input{
+    background-color: var(--white);
+    padding: 10px;
+}
+.contact{
+    center{
+        text-align: left;
+    }
+}
+.sign-up h4{
+    transition: all ease 0.2s;
+    opacity: 1;
+    scale: 1;
+    margin: 0px;
+}
+.sign-up--send{
+    color: var(--black);
+    background-color: var(--secondary-color);
+    padding: 10px;
+    font-size: smaller;
+    cursor: pointer;
+}
+.send-message{
+    background-color: #51A852;
+    width: fit-content;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    rotate: -30deg;
+}
+.bx-menu{
+    display: none;
+    color: transparent;
+    font-size: 0px;
+}
+.bxs-x-circle{
+    color: var(--secondary-color);
+    font-size: 40px;
+}
+.description__social{
+    font-size: 30px;
+    cursor: pointer;
+}
+.description-icon:hover{
+    cursor: pointer;
+    scale: 1.1;
+    color: var(--secondary-color);
+    transition: all ease 0.4s;
+}
+.card__title{
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    justify-content: space-between;
+}
+.card__stars{
+    color: var(--secondary-color);
+}
+
+/* responsive navbar */
+.responsive-navbar{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+    opacity: 0.9;
+    color: var(--black);
+    position: fixed;
+    top: 0%;
+    z-index: 1000;
+    transform: translateX(-100vw);
+    transition: all ease 0.4s;
+    
+    ul{
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 60px;
+        font-weight: 600;
+    }
+}
+.translated-navbar{
+    transition: all ease 0.4s;
+    transform: translateX(0vw) !important;
+}
+#close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.reservation__form .bx {
+    font-size: 20px;
+} 
+.sent-hide{
+    opacity: 0 !important;
+    scale: 0.5;
+    transition: all ease 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive navbar */
+
+.card__icons--child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .bx{
+        font-size: 20px;
+    }
+}
+.card__price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+
+    .bx{
+        color: var(--secondary-color);
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 720px) {
+    body{
+        overflow-x: hidden;
+    }
+    .home{
+        margin-top: 20px;
+        flex-direction: column-reverse;
+        padding-bottom: 20px;
+        margin-bottom: 0%;
+    }
+    nav{
+        width: calc(100% - 20px);
+        margin:0%;
+        padding: 0%;
+        padding-inline: 10px;
+        top: 0%;
+        margin: 0% ;
+        top:0 ;
+    }
+    .navbar-scrolled{
+        background-color: var(--terty-color);
+    }
+    .home__content{
+        padding-inline: 20px;
+    }
+    .page-list ul{
+        display: none;
+    }
+    .home__pictures{
+        width: calc(100vw - 20px);
+        border-radius: 20px 20px 0px 0px ;
+    }
+    .home--arrow{
+        width: 25vw;
+        height: 25vw;
+        top: -78vw;
+        right: -25vw;
+    }
+    .home--palm{
+        width:30vw;
+        top: -45vw;
+        left: -25vw;
+    }
+    .home--girl{
+        margin-top: 20px;
+        width: 80vw;
+        height: 80vw;
+    }
+    .about{
+        flex-direction: column;
+        width: calc(100vw - 20px );
+        margin-inline: 10px;
+        margin-block: 10px;
+    }
+    .about__pictures{
+        display: flex;
+        flex-direction: column;
+    }
+    .about--palm{
+        width: calc(100vw - 30px);
+        margin: 0%;
+    }
+    .about--beach{
+        width: calc(100vw - 30px);
+        margin: 0%;
+    }
+    .about--kayak{
+        width: calc(100vw - 30px);
+        margin: 0%;
+    }
+    .about--mountains{
+        width: calc(100vw - 30px);
+        margin: 0%;
+    }
+    .cards{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .card{
+        width: calc(100vw - 40px);
+        margin: 0%;
+    }
+    .card__picture{
+        width: 100% !important;
+    }
+
+    .reservation{
+        flex-direction: column-reverse;
+        height: auto;
+        padding-bottom: 0;
+    }
+    .reservation__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .reservation--input{
+        justify-self: center;
+    }
+    .reservation__picture{
+        height: 300px;
+        width: 100px;
+    }
+    .hotel__pictures{
+        flex-direction: column;
+    }
+    .hotel__pictures__center{
+        width: 350px;
+        height: 200px;
+    }
+    footer{
+        padding-inline: 10px;
+        flex-direction: column;
+        display: flex;
+    }
+    .description{
+        justify-content: center;
+        align-items: center;
+    }
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-self: center;
+        
+        center{
+            text-align: center;
+        }
+        h3{
+            margin: 5px;
+        }
+        p{
+            margin: 5px;
+        }
+    }
+    .reservation--success{
+        display: none;
+    }
+    #responsive--success{
+        display: flex;
+        scale: 0.7;
+        position: relative;
+        z-index: -1;
+        /* margin-top: 15px; */
+        bottom: 0%;
+        right: 0%;
+    }
+    .bx-menu{
+        display: inline;
+        font-size: 40px;
+        color: var(--black);
+        position: absolute;
+        right: 115px;
+    }
+}

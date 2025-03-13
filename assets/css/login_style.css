@@ -19,7 +19,7 @@ body{
     align-items: center;
     background-color: aliceblue;
 }
-.login-form{
+.login__form{
     display: flex;
     flex-direction: column;
     color: var(--black);
@@ -36,6 +36,12 @@ body{
     background-color: rgb(219, 219, 219);
     margin-top: 10px;
     border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-family: "Quicksand";
 }
 input{
     background: transparent;
@@ -44,12 +50,7 @@ input{
     width: 200px;
     color: var(--black);
     text-align: center;
-}
-.login-picture{
-    background-color: var(--primary-color);
-    width: 50vw;
-    height: 100vh;
-    flex: 1;
+    text-align: left;
 }
 button{
     background-color: var(--primary-color);
@@ -67,4 +68,96 @@ button:active{
 }
 .hide{
     display: none;
+    scale: 0.5;
+    opacity: 0;
+}
+.login__image{
+    background-image: url(../images/loginImage.png);
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 30vw;
+    animation-name: login-ani;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.login__picture{
+    background-color: var(--primary-color);
+    background-image: url(../images/loginBackgroud.png);
+    background-position: center;
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.plane{
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/plane.png);
+    width: 10vw;
+    height: 10vw;
+    animation-name: plane;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes plane{
+    from{
+        scale: 0.3;
+    }to{
+        scale: 1;
+    }
+}
+@keyframes login-ani{
+    0%{
+        transform: translateY(1.25vh);
+    }50%{
+        transform: translateY(-2.5vh);
+    }
+    100%{
+        transform: translateY(1.25vh);
+    }
+}
+#login__form__alert{
+    background-color: red;
+    border-radius: 5px;
+    font-size: small;
+    padding-inline: 20px;
+    padding-block: 5px;
+    color: var(--white);
+    margin-top: 10px;
+}
+.menu-icon{
+    scale: 1.5;
+}
+.bxs-error{
+    margin-top: 3px;
+}
+
+@media (max-width : 720px) {
+    body{
+        flex-direction: column;
+        gap: 30px;
+        overflow-x: hidden;
+    
+    }
+    .login__form{
+        width: 100%;
+        height: 50vh;
+        padding-top: 5vh;
+        p{
+            width: 80%;
+        }
+    }
+    .login__picture{
+        width: 100%;
+    }
+    .login__image{
+        height: 50vh;
+        width: 50vh;
+    }
 }
